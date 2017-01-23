@@ -50,15 +50,10 @@ filetype plugin indent on
 syntax enable
 set autoindent
 
-set guifont=Liberation\ Mono\ 10
 " set background=light
 
 set background=dark
 colorscheme scheakur
-if has("gui_running")
-    " colorscheme scheakur
-    " set background=dark
-endif
 
 set number
 
@@ -70,7 +65,7 @@ set tabstop=4
 autocmd FileType html,xml set shiftwidth=2 softtabstop=2
 autocmd FileType matlab set ft=octave
 " autocmd FileType tex set tw=80 cc=+1
-autocmd FileType tex set lbr
+autocmd FileType tex set linebreak breakindent
 
 set cinoptions+=g0
 autocmd FileType c,cpp set foldmethod=syntax
